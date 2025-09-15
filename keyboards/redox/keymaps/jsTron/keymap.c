@@ -71,7 +71,7 @@ enum layers {
 // MOD-tap COLEUP Layout
 #define MT_UHM MT(MOD_LGUI, KC_HOME)
 #define MT_UEN MT(MOD_LALT, KC_END)
-#define MT_U3 MT(MOD_LCTL, KC_NO)
+#define MT_UTB MT(MOD_LCTL, KC_TAB)
 #define MT_UIN MT(MOD_LSFT, KC_INS)
 #define MT_UDN MT(MOD_RSFT, KC_DOWN)
 #define MT_UUP MT(MOD_RCTL, KC_UP)
@@ -128,9 +128,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F4   ,KC_F5   ,XXXXXXX ,                          XXXXXXX ,KC_F6   ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10  ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,MT_UHM  ,MT_UEN  ,MT_U3   ,MT_UIN  ,KC_PGUP ,XXXXXXX ,                          XXXXXXX ,KC_LEFT ,MT_UDN  ,MT_UUP  ,MT_URT  ,MT_UAP  ,XXXXXXX ,
+     XXXXXXX ,MT_UHM  ,MT_UEN  ,MT_UTB   ,MT_UIN  ,KC_PGUP ,XXXXXXX ,                          XXXXXXX ,KC_LEFT ,MT_UDN  ,MT_UUP  ,MT_URT  ,MT_UAP  ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,KC_F11  ,KC_F12  ,XXXXXXX ,KC_DEL  ,KC_PGDN ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,KC_PIPE ,KC_BSLS ,KC_VOLD ,KC_VOLU ,KC_MUTE ,XXXXXXX ,
+     XXXXXXX ,KC_F11  ,KC_F12  ,KC_CAPS ,KC_DEL  ,KC_PGDN ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,KC_PIPE ,KC_BSLS ,KC_VOLD ,KC_VOLU ,KC_MUTE ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,     KC_BSPC ,    DEL_DN  ,XXXXXXX ,        XXXXXXX ,ENT_UP  ,    KC_SPC  ,     _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX 
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
